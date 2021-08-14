@@ -14,7 +14,7 @@
 */
 function generate_weather_data() {
     let data_list = [
-        Math.random() * 100, 
+        Math.random() * 50, 
         Math.random() * 100, 
         Math.random(), 
         Math.random() * 200, 
@@ -36,7 +36,7 @@ function generate_weather_data() {
             data_list[rand_pos] *= -1;
             break;
         case 4:
-            data_list[rand_pos] = null;
+            data_list[rand_pos] = NaN;
     }
     
     let data_points = {
@@ -51,7 +51,7 @@ function generate_weather_data() {
     return data_points;
 }
 
-function getRandomIntInclusive(min, max) {
+function getRandomIntInclusive(min: number, max: number) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
