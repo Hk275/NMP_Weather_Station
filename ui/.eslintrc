@@ -1,97 +1,97 @@
 {
-  "plugins": [
-    "prettier",
-    "@typescript-eslint"
-  ],
-  "extends": [
-    "airbnb-typescript",
-    "react-app",
-    "prettier",
-    "prettier/react",
-    "prettier/@typescript-eslint"
-  ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "project": "./tsconfig.json"
-  },
-  "settings": {
-    "import/resolver": {
-      "typescript": {
-        "alwaysTryTypes": true
+    "plugins": [
+      "prettier",
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "airbnb-typescript",
+      "react-app",
+      "prettier",
+      "prettier/react",
+      "prettier/@typescript-eslint"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "settings": {
+      "import/resolver": {
+        "typescript": {
+          "alwaysTryTypes": true
+        }
       }
+    },
+    "rules": {
+      "prettier/prettier": [
+        "warn",
+        {
+          "semi": true,
+          "trailingComma": "all",
+          "singleQuote": true,
+          "printWidth": 80
+        }
+      ],
+      "max-len": [
+        "warn",
+        {
+          "code": 80,
+          "comments": 80,
+          "tabWidth": 2,
+          "ignoreStrings": true,
+          "ignoreTemplateLiterals": true,
+          "ignoreComments": true,
+          "ignoreTrailingComments": true,
+          "ignoreUrls": true,
+          "ignoreRegExpLiterals": true
+        }
+      ],
+      "object-curly-spacing": ["error", "always"],
+      "no-unused-vars": [
+        "error",
+        {
+          "vars": "all",
+          "args": "none"
+        }
+      ],
+      "no-plusplus": [
+        "error",
+        {
+          "allowForLoopAfterthoughts": true
+        }
+      ],
+      "no-console": "warn",
+      "@typescript-eslint/no-unused-vars": [
+        "warn",
+        {
+          "vars": "all",
+          "args": "none"
+        }
+      ],
+      "@typescript-eslint/no-explicit-any": "error",
+      "@typescript-eslint/explicit-function-return-type": "error",
+      "import/no-extraneous-dependencies": [
+        "error",
+        {
+          "devDependencies": [
+            "**/*.test.js",
+            "**/*.test.jsx",
+            "**/*.test.ts",
+            "**/*.test.tsx",
+            "src/tests/**/*"
+          ]
+        }
+      ],
+      "import/prefer-default-export": "off",
+      "react/jsx-key": "error",
+      "react/jsx-props-no-spreading": "off",
+      "react/jsx-boolean-value": "off",
+      "react/prop-types": "off",
+      "react/no-unescaped-entities": "off",
+      "react/jsx-one-expression-per-line": "off",
+      "react/jsx-wrap-multilines": "off",
+      "react/jsx-curly-newline": "off",
+      "react/destructuring-assignment": "off",
+      "react/prefer-stateless-function": "off",
+      "class-methods-use-this": "off"
     }
-  },
-  "rules": {
-    "prettier/prettier": [
-      "warn",
-      {
-        "semi": true,
-        "trailingComma": "all",
-        "singleQuote": true,
-        "printWidth": 80
-      }
-    ],
-    "max-len": [
-      "warn",
-      {
-        "code": 80,
-        "comments": 80,
-        "tabWidth": 2,
-        "ignoreStrings": true,
-        "ignoreTemplateLiterals": true,
-        "ignoreComments": true,
-        "ignoreTrailingComments": true,
-        "ignoreUrls": true,
-        "ignoreRegExpLiterals": true
-      }
-    ],
-    "object-curly-spacing": ["error", "always"],
-    "no-unused-vars": [
-      "error",
-      {
-        "vars": "all",
-        "args": "none"
-      }
-    ],
-    "no-plusplus": [
-      "error",
-      {
-        "allowForLoopAfterthoughts": true
-      }
-    ],
-    "no-console": "warn",
-    "@typescript-eslint/no-unused-vars": [
-      "warn",
-      {
-        "vars": "all",
-        "args": "none"
-      }
-    ],
-    "@typescript-eslint/no-explicit-any": "error",
-    "@typescript-eslint/explicit-function-return-type": "error",
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "devDependencies": [
-          "**/*.test.js",
-          "**/*.test.jsx",
-          "**/*.test.ts",
-          "**/*.test.tsx",
-          "src/tests/**/*"
-        ]
-      }
-    ],
-    "import/prefer-default-export": "off",
-    "react/jsx-key": "error",
-    "react/jsx-props-no-spreading": "off",
-    "react/jsx-boolean-value": "off",
-    "react/prop-types": "off",
-    "react/no-unescaped-entities": "off",
-    "react/jsx-one-expression-per-line": "off",
-    "react/jsx-wrap-multilines": "off",
-    "react/jsx-curly-newline": "off",
-    "react/destructuring-assignment": "off",
-    "react/prefer-stateless-function": "off",
-    "class-methods-use-this": "off"
   }
-}
