@@ -56,7 +56,7 @@ A client should be able to browse and search through the logged session database
 
 The specific design and implementation details of the features in this task are up to you to decide. 
 
-## Extension Task 5
+## (Extension) Task 5 - Weather API 
 
 Design and create widgets to show things like a live rainfall radar from a free weather API or even embed weather maps. This is another task where you can showcase your creativity! 
 
