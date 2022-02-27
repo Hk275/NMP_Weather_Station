@@ -138,24 +138,30 @@ Finally, you will be demonstrating and presenting your application at the end of
 ### Backend 
 
  - https://nodejs.dev/learn 
- - https://expressjs.com/ 
- - https://docs.nestjs.com 
+ - https://expressjs.com/
  - https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html 
  - https://nodejs.org/api/dgram.html
+ - https://www.youtube.com/watch?v=-MTSQjw5DrM 
+ - https://www.youtube.com/watch?v=ENrzD9HAZK4 
+ - https://www.youtube.com/watch?v=zQnBQ4tB3ZA 
 
 ### Frontend 
 
  - https://reactjs.org/ 
  - https://react-typescript-cheatsheet.netlify.app/docs/basic/setup 
- - https://reactjs.org/tutorial/tutorial.html 
+ - https://reactjs.org/tutorial/tutorial.html
+ - https://www.youtube.com/watch?v=hQAHSlTtcmY 
+ - https://www.youtube.com/watch?v=Tn6-PIqc4UM
 
 ### Cloud 
 
 Kubernetes/Docker documentation is your friend. 
 
- - https://kubernetes.io/docs/home/ 
- - https://minikube.sigs.k8s.io/docs/start/ 
+ - https://kubernetes.io/docs/home/  
+ - https://minikube.sigs.k8s.io/docs/start/  
  - https://docs.docker.com/ 
+ - https://curity.io/resources/learn/integration-kong-open-source/ 
+ - https://docs.konghq.com/gateway/2.7.x/reference/db-less-and-declarative-config 
  - https://registry.terraform.io/browse/providers 
 
 Managed Kubernetes service documentation:  
