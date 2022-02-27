@@ -6,7 +6,7 @@ On-track weather data is useful to collect, as it allows vehicle data to be anal
 However, viewing a stream of continuous raw data on a terminal is not very useful. Hence, after the hardware to collect this raw numerical data is set up, the data stream must be processed appropriately and displayed on a frontend. 
 
 ## Task 1 - Backend
-You will be given a module weather_output.ts which contains a function, generate_weather_data, that emulates the data output from a weather station by returning an object with the following data points: 
+You will be given a module `weather_output.ts` which contains a function, `generate_weather_data`, that emulates the data output from a weather station by returning an object with the following data points: 
 
  - Ambient Temperature 
  - Track Temperature 
@@ -15,7 +15,7 @@ You will be given a module weather_output.ts which contains a function, generate
  - Wind Speed 
  - Wind Direction 
 
-You must not change weather_output.ts - instead, import the function into your program and call it in a timed loop to continuously receive data. The emulated data will have errors (see the comment in weather_output.ts), so some validation of this raw data in your backend is required.  
+You must not change `weather_output.ts` - instead, import the function into your program and call it in a timed loop to continuously receive data. The emulated data will have errors (see the comment in `weather_output.ts`), so some validation of this raw data in your backend is required.  
 
 Then you must stream this data to a frontend client via UDP sockets. This data must then be made available to the user interface. Your backend should also ideally implement an API with routes to start and stop the data stream from the frontend, as well as any other useful routes.
 
