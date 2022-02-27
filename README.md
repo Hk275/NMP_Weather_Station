@@ -69,7 +69,8 @@ Design and create widgets to show things like a live rainfall radar from a free 
 
 ## Running the Code
 
-The following assumes that you have `npm 6.14.14` and `node v14.17.5` installed. To change the manner in which the programs are run, edit package.json and/or tsconfig.json in each directory.
+The following assumes that you have `node v14.17.5` installed.
+ - If you do not, then install [node](https://nodejs.org/en/download/), and then follow this [guide](https://www.geeksforgeeks.org/how-to-install-the-previous-version-of-node-js-and-npm/) to check and change node to the correct versions for Windows. For Linux and MacOS, install and use [nvm](https://github.com/nvm-sh/nvm) to change the node version.
 
 First, install `ts-node` with
 ```bash
@@ -117,15 +118,18 @@ npm install
 npm start
 ```
 
+If for some reason you want to change the manner in which the above programs are run, edit `package.json` and/or `tsconfig.json` in each directory.
+
 ## Submission
 Fork this git repository, and then add all your code and documentation to the forked repository. This will include: 
 
  - Functional server code 
  - A link to the Figma designs 
- - Functional UI code 
- - YAML files to replicate Kubernetes Deployment, as well as Docker build files for your images 
- - A .md or .pdf file outlining how the program works, as well as a Kubernetes architecture diagram  
- - A URL to the deployed application somewhere in your documentation – the application should be accessible via the browser. 
+ - Functional UI code
+ - A .md or .pdf file outlining how the program works
+ - YAML files to replicate Kubernetes Deployment, as well as Docker build files for your images (Task 3)
+ - A Kubernetes architecture diagram (Task 3)
+ - A URL to the deployed application somewhere in your documentation – the application should be accessible via the browser (Task 3) 
 
 Finally, you will be demonstrating and presenting your application at the end of the NMP. Feel free to make additional slides, or just present your report.
 
@@ -134,24 +138,30 @@ Finally, you will be demonstrating and presenting your application at the end of
 ### Backend 
 
  - https://nodejs.dev/learn 
- - https://expressjs.com/ 
- - https://docs.nestjs.com 
+ - https://expressjs.com/
  - https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html 
  - https://nodejs.org/api/dgram.html
+ - https://www.youtube.com/watch?v=-MTSQjw5DrM 
+ - https://www.youtube.com/watch?v=ENrzD9HAZK4 
+ - https://www.youtube.com/watch?v=zQnBQ4tB3ZA 
 
 ### Frontend 
 
  - https://reactjs.org/ 
  - https://react-typescript-cheatsheet.netlify.app/docs/basic/setup 
- - https://reactjs.org/tutorial/tutorial.html 
+ - https://reactjs.org/tutorial/tutorial.html
+ - https://www.youtube.com/watch?v=hQAHSlTtcmY 
+ - https://www.youtube.com/watch?v=Tn6-PIqc4UM
 
 ### Cloud 
 
 Kubernetes/Docker documentation is your friend. 
 
- - https://kubernetes.io/docs/home/ 
- - https://minikube.sigs.k8s.io/docs/start/ 
+ - https://kubernetes.io/docs/home/  
+ - https://minikube.sigs.k8s.io/docs/start/  
  - https://docs.docker.com/ 
+ - https://curity.io/resources/learn/integration-kong-open-source/ 
+ - https://docs.konghq.com/gateway/2.7.x/reference/db-less-and-declarative-config 
  - https://registry.terraform.io/browse/providers 
 
 Managed Kubernetes service documentation:  
