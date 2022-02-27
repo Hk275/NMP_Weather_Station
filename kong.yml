@@ -1,0 +1,18 @@
+# Kong open source gateway declarative
+
+_format_version: "2.1"
+
+services:
+  - name: service1
+    url: http://localhost:8001/api/service1
+    routes:
+      - name: service1_gateway
+        paths:
+          - /api/service1
+
+  - name: service2
+    url: http://localhost:8002/api/service2
+    routes:
+      - name: service2_gateway
+        paths:
+          - /api/service2
