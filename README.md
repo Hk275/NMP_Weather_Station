@@ -48,11 +48,11 @@ It is recommended to use an IaC (Infrastructure as Code) tool such as Terraform 
 
 ## (Extension) Task 4 - Data Persistence and Log Replaying 
 
-Implement a method of logging the weather data and storing each session of logged data in a database.  
+Implement a method of logging the weather data and storing each session of logged data in some form of persistent data storage.  
 
 For example, if weather data was logged on the 4th of March, starting at 15:30:45 and ending at 15:36:12, that would count as a single session. 
 
-A client should be able to browse and search through the logged session database in the frontend, and either download the raw data for a session, or replay the logged data in the session on the charts/widgets in the UI. 
+A client should be able to browse and search through the logged sessions in the frontend, and either download the raw data for a session, or replay the logged data in the session on the charts/widgets in the UI. 
 
 The specific design and implementation details of the features in this task are up to you to decide. 
 
