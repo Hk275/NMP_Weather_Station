@@ -52,9 +52,9 @@ async function sendData(): Promise<void> {
 
 socket.bind(4500);
 
-setInterval(sendData, 1000);
-
 // -------------------------------------------------------
+
+setInterval(sendData, 1000);
 
 api.listen(API_PORT, () =>
   console.log(
