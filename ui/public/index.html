@@ -39,5 +39,28 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    
   </body>
+  <p id="demo"></p>
+
+  <script>
+    // Create WebSocket connection.
+    const socket = new WebSocket('ws://localhost:8000');
+
+    // Connection opened
+    socket.addEventListener('open', function (event) {
+        console.log('Connected to WS Server')
+    });
+
+    // Listen for messages
+    socket.addEventListener('message', function (event) {
+        console.log('Message from server ', event.data);
+        document.getElementById("demo").innerHTML =  event.data;
+    });
+
+    const sendMessage = () => {
+        socket.send('Hello From Client!');
+    }
+
+</script>
 </html>
